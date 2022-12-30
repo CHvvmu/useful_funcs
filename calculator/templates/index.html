@@ -1,0 +1,28 @@
+<body style="background-color:rgb(230, 236, 237);">
+
+<main>
+    <header>
+      <fieldset>  
+        <legend >калькулятор уровня воды:</legend>        
+  <form action="/" method="POST" >    
+          <h5 style="width:100%"for="number">начальный уровень (Н):</br>
+          <input type="number" name="OrigWaterLevel"  /></br>
+          <label style="width:100%" for="number">скорость подъема воды (Р):</br>
+          <input type="number" name="LiftingSpeedWater" value="liftingSpeedWater" /></br>
+          <label style="width:100%" for="number">время наводнения (N):</label></br> 
+          <input type="number" name="FloodTime" value="floodTime" /></br></br> 
+              <input type="submit" value="Расчитать"> Уровень воды будет {{ .new.NewLevel}}</h4></br>
+    </fieldset> 
+    <fieldset> 
+      <table style="width:100%"></table>   
+          <h5><label for="number">контрольный уровень (К):
+          <input type="number" name="AnyLevel" value="anyLevel" /></br></br> 
+              <input type="submit" value="Показать"> Контрольный уровень через {{ .new.NewTime}}</h4></br>              
+              
+              <input type="submit" value="сбросить" >  
+      </table>
+    </fieldset> 
+    </form>   
+  </header>
+  </main>
+</body>
